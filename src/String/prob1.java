@@ -5,6 +5,9 @@ public class prob1
 {
    public class A
 {
+   A()
+   {
+   }
   void show()
   {
    System.out.println("parent");
@@ -12,6 +15,10 @@ public class prob1
 }
 public class B extends A
 {
+   B()
+   {
+
+   }
    @Override
    void show()
    {
@@ -20,7 +27,7 @@ public class B extends A
 }
 
    public static void main(String[] args) {
-        B b = new B();
+        final B b = new B();
         b.show();
    }
 
